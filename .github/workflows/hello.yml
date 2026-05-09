@@ -1,6 +1,11 @@
 name: Hello Agile
+# Testing workflow trigger
+on:
+  push:
+    branches: [ dev ]
 
-on: [push]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   say_hello:
